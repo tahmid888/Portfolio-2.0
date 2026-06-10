@@ -3,8 +3,8 @@ import { ImageWithFallback } from "./figma/ImageWithFallback";
 
 const stats = [
   { number: "2+", label: "Years Experience" },
-  { number: "25+", label: "Projects Tested" },
-  { number: "1K+", label: "Test Cases Written" },
+  { number: "31+", label: "Projects Tested" },
+  { number: "2K+", label: "Test Cases Written" },
   { number: "98.9%", label: "Release Success Rate" },
 ];
 
@@ -69,7 +69,7 @@ export function About() {
               className="text-neutral-500"
               style={{ fontSize: "1.05rem", fontWeight: 400, lineHeight: 1.8 }}
             >
-              From writing Selenium and Cypress frameworks to load testing with JMeter, I bring a systematic approach to identifying defects before they reach your users.
+              From writing Playwright and Selenium frameworks to load testing with JMeter, I bring a systematic approach to identifying defects before they reach your users.
             </p>
 
             <div className="grid grid-cols-2 gap-6 mt-4">
