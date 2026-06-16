@@ -8,18 +8,27 @@ import { ExperienceEducation } from "./components/ExperienceEducation";
 import { Testimonials } from "./components/Testimonials";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
+import { Skills } from "./components/Skills";
 
 export default function App() {
   return (
     <div className="w-full min-h-screen font-[Plus_Jakarta_Sans] antialiased">
       <Navbar />
       <Hero />
-      <About />
+      {/* <About />
       <Projects />
       <Services />
       <Certifications />
       <ExperienceEducation />
-      <Testimonials />
+      <Testimonials /> 
+      <Contact />
+      <Footer /> */}
+       <About />
+      <Projects />
+      <ExperienceEducation />
+      <Skills />
+      <Certifications />
+      <Services />
       <Contact />
       <Footer />
     </div>

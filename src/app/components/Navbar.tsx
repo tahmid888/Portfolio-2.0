@@ -7,8 +7,15 @@ export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("");
 
-  const links = ["About", "Projects", "Services", "Testimonials", "Contact"];
-
+  //const links = ["About", "Projects", "Services", "Testimonials", "Contact"];
+  const links = [
+    "About",
+    "Projects",
+    "Experience",
+    "Skills",
+    "Certifications",
+    "Contact",
+  ];
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
@@ -56,7 +63,7 @@ export function Navbar() {
             {/* Logo */}
             <a href="#" className="relative group flex items-center gap-2.5">
               <img
-               src="./images/201.png"
+                src="./images/201.png"
                 alt="Tahamidul Haque"
                 className="w-8 h-8 rounded-full object-cover ring-2 ring-emerald-500/30"
               />
@@ -103,7 +110,9 @@ export function Navbar() {
             </div>
 
             {/* CTA Button */}
-            <a
+            {/* ArrowUpRight */}
+            {/* group-hover:rotate-0 -rotate-12 */}
+            {/* <a
               href="https://docs.google.com/spreadsheets/d/1ZvfIslWTmKK6rcEtzomGUJxHpRaqP5fnjVcJmAc0bfA/edit?gid=831281403#gid=831281403"
               className="hidden md:inline-flex items-center gap-1.5 bg-black text-white pl-4 pr-3 py-2 rounded-xl hover:bg-neutral-800 transition-all duration-300 group shadow-[0_4px_14px_rgba(0,0,0,0.25)] hover:shadow-[0_6px_20px_rgba(0,0,0,0.35)]"
               style={{ fontSize: "0.8rem", fontWeight: 600 }}
@@ -111,8 +120,25 @@ export function Navbar() {
               Download CV
               <span className="flex items-center justify-center w-5 h-5 bg-white/15 rounded-md group-hover:bg-emerald-500/80 transition-colors duration-300">
                 <ArrowDown size={12} className=" transition-transform duration-300" />
-                {/* ArrowUpRight */}
-                {/* group-hover:rotate-0 -rotate-12 */}
+                
+              </span>
+            </a> */}
+
+            {/* Updated Download CV */}
+            <a
+              href="/pdf/Tahamidul Haque.pdf"
+              download="Tahamidul Haque.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden md:inline-flex items-center gap-1.5 bg-black text-white pl-4 pr-3 py-2 rounded-xl hover:bg-neutral-800 transition-all duration-300 group shadow-[0_4px_14px_rgba(0,0,0,0.25)] hover:shadow-[0_6px_20px_rgba(0,0,0,0.35)]"
+              style={{ fontSize: "0.8rem", fontWeight: 600 }}
+            >
+              Download CV
+              <span className="flex items-center justify-center w-5 h-5 bg-white/15 rounded-md group-hover:bg-emerald-500/80 transition-colors duration-300">
+                <ArrowDown
+                  size={12}
+                  className="transition-transform duration-300"
+                />
               </span>
             </a>
 
@@ -191,7 +217,7 @@ export function Navbar() {
                     onClick={() => setOpen(false)}
                     // Get in Touch
                   >
-                   Download CV
+                    Download CV
                     <ArrowDown size={14} />
                     {/* ArrowUpRight */}
                   </motion.a>
